@@ -122,7 +122,7 @@ class WPCA(BaseEstimator, TransformerMixin):
             covar *= np.outer(Ws, Ws) ** self.xi
 
         eigvals = (X.shape[1] - n_components, X.shape[1] - 1)
-        evals, evecs = linalg.eigh(covar, eigvals=eigvals)
+        evals, evecs = linalg.eigh(covar, subset_by_index=eigvals) #  was eigvals
         self.components_ = evecs[:, ::-1].T
         self.explained_variance_ = evals[::-1]
         self.explained_variance_ratio_ = evals[::-1] / covar.trace()
