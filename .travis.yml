@@ -8,9 +8,7 @@ cache:
     - $HOME/miniconda
 
 python:
-  - 2.7
-  - 3.4
-  - 3.5
+  - 3.12
 
 env:
   - CONDA_DEPS="numpy scipy nose scikit-learn"

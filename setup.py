@@ -37,7 +37,7 @@ AUTHOR_EMAIL = "jakevdp@uw.edu"
 MAINTAINER = "Jake VanderPlas"
 MAINTAINER_EMAIL = "jakevdp@uw.edu"
 URL = 'https://github.com/jakevdp/wpca/'
-DOWNLOAD_URL = 'https://github.com/jakevdp/wpca/'
+DOWNLOAD_URL = 'https://github.com/codr99/wpca/'
 LICENSE = 'BSD'
 
 VERSION = version('wpca/__init__.py')
